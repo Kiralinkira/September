@@ -1,4 +1,4 @@
-local prefix = "September.pkg."
+local prefix = "packages.September.pkg."
 
 local key_one = require(prefix .. "key_one")
 local key_kanon = require(prefix .. "key_kanon")
