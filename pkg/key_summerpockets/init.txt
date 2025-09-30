@@ -1,5 +1,5 @@
 local extension = Package:new("key_summerpockets")
-
+extension.extensionName = "September"
 extension:addGeneral(General:new("key_umi", {
 	sex = "female",
 	group = "key",

@@ -1,5 +1,5 @@
 local extension = Package:new("key_loopers")
-
+extension.extensionName = "September"
 Fk:loadTranslationTable{
 	["key_loopers"] = "Loopers",
 }

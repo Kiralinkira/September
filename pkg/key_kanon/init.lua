@@ -1,5 +1,5 @@
 local extension = Package:new("key_kanon")
-
+extension.extensionName = "September"
 Fk:loadTranslationTable{
 	["key_kanon"] = "Kanon",
 }

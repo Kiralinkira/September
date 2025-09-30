@@ -1,4 +1,5 @@
 local extension = Package:new("key_angelbeats")
+extension.extensionName = "September"
 extension:loadSkillSkelsByPath("./September/pkg/key_angelbeats/skills")
 
 Fk:loadTranslationTable{
