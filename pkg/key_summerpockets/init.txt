@@ -1,0 +1,261 @@
+local extension = Package:new("key_summerpockets")
+
+extension:addGeneral(General:new("key_umi", {
+	sex = "female",
+	group = "key",
+	hp = 3,
+	skills = {"umi_chaofan", "umi_lunhui", "umi_qihuan"},
+	names = "鹰原|羽未",
+}))
+
+Fk:loadTranslationTable{
+	["key_umi"] = "加藤うみ",
+	["umi_chaofan"] = "炒饭",
+	["umi_chaofan_info"] = "出牌阶段限一次，你可以弃置两张花色不同的手牌并选择一名其他角色。你摸一张牌，若你的体力值：大于2，目标角色回复1点体力；等于2，目标角色摸两张牌；小于2，目标角色受到1点无来源且对应渠道为这两张牌的火焰伤害。",
+	["umi_lunhui"] = "轮回",
+	["umi_lunhui_info"] = "一名其他角色的回合结束时，若你的手牌数小于体力值，则你可以失去1点体力。若如此做，你摸两张牌并进行一个额外回合，且你于此回合内计算与此角色的距离视为1。",
+	["umi_shiroha"] = "轮回 - 延时效果",
+	["umi_qihuan"] = "七幻",
+	["umi_qihuan_info"] = "限定技，当你处于濒死状态时，你可以移去此武将牌。若如此做，你回复X点体力（X为场上势力数）。然后，你可获得场上已死亡角色武将牌上的至多两个技能。",
+	["加藤うみ"] = {"Kato", "Umi"},
+}
+
+extension:addGeneral(General:new("key_umi2", {
+	sex = "female",
+	group = "key",
+	hp = 3,
+	isUnseen = true,
+	names = "鹰原|羽未",
+}))
+
+Fk:loadTranslationTable{
+	["key_umi2"] = "鹰原羽未",
+	["鹰原羽未"] = {"Takahara", "Umi"},
+}
+
+extension:addGeneral(General:new("key_tsumugi", {
+	sex = "female",
+	group = "key",
+	hp = 3,
+	skills = {"tsumugi_mugyu", "tsumugi_huilang"},
+	names = "文德斯|紬",
+}))
+
+Fk:loadTranslationTable{
+	["key_tsumugi"] = "紬文德斯",
+	["tsumugi_mugyu"] = "姆啾",
+	["tsumugi_mugyu_info"] = "当你成为牌的目标后，若你的手牌数小于体力上限，则你可以摸一张牌。",
+	["tsumugi_huilang"] = "回廊",
+	["tsumugi_huilang2"] = "回廊",
+	["tsumugi_huilang_info"] = "回合结束时，你可以将任意张牌扣置于武将牌下（均称为「隐」）。回合开始时，你获得所有「隐」，然后可令等量的角色各摸一张牌。",
+	["紬文德斯"] = {"Tsumugi", "Wenders"},
+}
+
+extension:addGeneral(General:new("key_inari", {
+	sex = "female",
+	group = "key",
+	hp = 2,
+	skills = {"inari_baiwei", "inari_huhun"},
+	names = "空门|稻荷",
+}))
+
+Fk:loadTranslationTable{
+	["key_inari"] = "稻荷",
+	["inari_baiwei"] = "摆尾",
+	["inari_baiwei_draw"] = "摆尾",
+	["inari_baiwei_info"] = "你可以将一张♦牌当做任意基本牌使用或打出。此牌结算完成后，你摸一张牌。",
+	["inari_baiwei_backup"] = "摆尾",
+	["inari_baiwei_sha"] = "摆尾",
+	["inari_baiwei_shan"] = "摆尾",
+	["inari_huhun"] = "狐魂",
+	["inari_huhun_info"] = "锁定技，你的♣牌的花色均视为♦。你的手牌上限+1。",
+	["稻荷"] = {"Inari"},
+}
+
+extension:addGeneral(General:new("key_ao", {
+	sex = "female",
+	group = "key",
+	hp = 3,
+	skills = {"ao_xishi", "ao_kuihun", "ao_shixin"},
+	names = "空门|苍",
+}))
+
+Fk:loadTranslationTable{
+	["key_ao"] = "空门苍",
+	["ao_xishi"] = "习事",
+	["ao_xishi_info"] = "锁定技，当你使用或打出♦牌时，或其他角色使用♦牌指定你为目标后，你摸一张牌。",
+	["ao_kuihun"] = "窥魂",
+	["ao_kuihun_info"] = "其他角色进入濒死状态时，你可以摸一张牌，然后观看其手牌并将其中一张牌置于你的武将牌上，称为「蝶」。你使用与一张「蝶」花色相同的牌时无距离和次数限制。你的手牌上限+X（X为蝶数）。",
+	["ao_shixin"] = "释心",
+	["ao_shixin_info"] = "觉醒技，准备阶段，若你的「蝶」中包含至少三种花色，则你加1点体力上限并回复1点体力，失去〖窥魂〗并获得〖蝶归〗。",
+	["ao_diegui"] = "蝶归",
+	["ao_diegui_backup"] = "蝶归",
+	["ao_diegui_info"] = "出牌阶段限一次，你可以将一张「蝶」交给一名角色，该角色摸两张牌并复原武将牌。",
+	["空门苍"] = {"Sorakado", "Ao"},
+}
+
+extension:addGeneral(General:new("key_kyoko", {
+	sex = "female",
+	group = "key",
+	hp = 3,
+	skills = {"kyoko_juwu", "kyoko_zhengyi"},
+	names = "岬|镜子",
+}))
+
+Fk:loadTranslationTable{
+	["key_kyoko"] = "岬镜子",
+	["kyoko_juwu"] = "聚物",
+	["kyoko_juwu_info"] = "你的回合外，当有装备牌进入弃牌堆后，若这些牌不是从你的区域移动的，则你可以获得这些牌。",
+	["kyoko_zhengyi"] = "整遗",
+	["kyoko_zhengyi_info"] = "锁定技，若你装备区的花色数：大于等于1，你视为拥有〖精策〗；大于等于2，你视为拥有〖涉猎〗：大于等于3，你视为拥有〖制衡〗；大于等于4，你将〖精策〗和〖制衡〗改为界限突破版本。",
+	["kyoko_jingce"] = "精策",
+	["kyoko_shelie"] = "涉猎",
+	["kyoko_zhiheng"] = "制衡",
+	["岬镜子"] = {"Misaki", "Kyoko"},
+}
+
+extension:addGeneral(General:new("key_miki", {
+	sex = "female",
+	group = "key",
+	hp = 3,
+	skills = {"miki_shenqiang", "miki_huanmeng", "miki_zhiluo"},
+	names = "野村|美希",
+}))
+
+Fk:loadTranslationTable{
+	["key_miki"] = "野村美希",
+	["miki_shenqiang"] = "神枪",
+	["miki_shenqiang_info"] = "锁定技，游戏开始时，你将一张【海德洛格拉迪尔特·改】和一张【望远镜】置入你的装备区。你装备区内的武器牌和宝物牌不能被其他角色弃置。",
+	["miki_huanmeng"] = "幻梦",
+	["miki_huanmeng_info"] = "准备阶段开始时，你可以观看牌堆顶的X+1张牌并可以按任意顺序置于牌堆顶或牌堆底。（X为你装备区内的牌数）",
+	["miki_zhiluo"] = "治裸",
+	["miki_zhiluo_info"] = "锁定技，一名其他角色的回合结束时，若其在你的攻击范围内且其装备区内没有牌，则你选择：①摸一张牌。②视为对其使用一张【杀】。",
+	["miki_hydrogladiator"] = "海德洛",
+	["miki_hydrogladiator_info"] = "全名为【海德洛格拉迪尔特·改】。锁定技，当你因执行【杀】的效果而对目标角色造成伤害后，你弃置所有至目标角色距离为1的其他角色的一张牌或弃置其两张牌。",
+	["miki_hydrogladiator_skill"] = "海德洛格拉迪尔特·改",
+	["miki_binoculars"] = "望远镜",
+	["miki_binoculars_info"] = "锁定技，其他角色的手牌对你可见。",
+	["野村美希"] = {"Nomura", "Miki"},
+}
+
+extension:addGeneral(General:new("key_ryoichi", {
+	sex = "male",
+	group = "key",
+	hp = 4,
+	skills = {"ryoichi_baoyi", "ryoichi_tuipi"},
+	names = "三谷|良一",
+}))
+
+Fk:loadTranslationTable{
+	["key_ryoichi"] = "三谷良一",
+	["ryoichi_baoyi"] = "爆衣",
+	["ryoichi_baoyi_info"] = "锁定技，当你失去装备区内的一张牌后，你摸一张牌，然后选择一项：①令一名其他女性角色失去1点体力。②弃置一名其他非女性角色区域内的两张牌。",
+	["ryoichi_tuipi"] = "褪皮",
+	["ryoichi_tuipi_info"] = "锁定技，你不是【顺手牵羊】和【过河拆桥】的合法目标。你装备区的牌于弃牌阶段内计入手牌上限。",
+	["三谷良一"] = {"Mitani", "Ryoichi"},
+}
+
+extension:addGeneral(General:new("key_shiroha", {
+	sex = "female",
+	group = "key",
+	hp = 3,
+	skills = {"shiroha_yuzhao", "shiroha_guying", "shiroha_jiezhao"},
+	names = "鸣濑|白羽",
+}))
+
+Fk:loadTranslationTable{
+	["key_shiroha"] = "鸣濑白羽",
+	["shiroha_yuzhao"] = "预兆",
+	["shiroha_yuzhao_umi"] = "预兆",
+	["shiroha_yuzhao_info"] = "锁定技，游戏开始时，你将牌堆顶的X张牌扣置于你的武将牌上，称为「兆」。一名角色的回合开始时，若你有「兆」且其至你的距离不大于1，则你将牌堆顶的X张牌扣置为「兆」，然后将等量的「兆」置于牌堆顶。（X为势力数）",
+	["shiroha_guying"] = "孤影",
+	["shiroha_guying_info"] = "锁定技，每回合限一次，当你受到伤害/对其他角色造成伤害时，你进行判定。若结果为红色/黑色，此伤害-1/+1。",
+	["shiroha_guying_rewrite"] = "孤影·改",
+	["shiroha_guying_rewrite_info"] = "当你受到伤害/对其他角色造成伤害时，你可进行判定。若结果为红色/黑色，此伤害-1/+1。",
+	["shiroha_jiezhao"] = "解兆",
+	["shiroha_jiezhao_info"] = "一名角色的判定牌生效前，你可打出一张「兆」代替之。当你以此法移去最后一张「兆」后，你加1点体力上限并回复1点体力，然后修改〖孤影〗并随机获得以下技能中的一个：〖炒饭〗/〖习事〗/〖呣啾〗/〖结伴〗。",
+	["鸣濑白羽"] = {"Naruse", "Shiroha"},
+}
+
+extension:addGeneral(General:new("key_shizuku", {
+	sex = "female",
+	group = "key",
+	hp = 3,
+	skills = {"shizuku_sizhi", "shizuku_biyi", "shizuku_sanhua"},
+	names = "水织|静久",
+}))
+
+Fk:loadTranslationTable{
+	["key_shizuku"] = "水织静久",
+	["shizuku_sizhi"] = "思智",
+	["shizuku_sizhi2"] = "思智",
+	["shizuku_sizhi_info"] = "出牌阶段限一次，你可以弃置任意张点数之和为13的牌，然后摸两倍数量的牌。以此法得到的牌中，黑色牌本回合无距离和次数限制，红色牌本回合不计入手牌上限。",
+	["shizuku_biyi"] = "避忆",
+	["shizuku_biyi_info"] = "当你受到伤害后，你可以进行一次判定，然后若你弃置任意张点数之和与判定结果点数相同的牌，你回复1点体力。",
+	["shizuku_sanhua"] = "散花",
+	["shizuku_sanhua_info"] = "当你死亡时，你可令一名其他角色从牌堆中获得四张名称各不相同的基本牌。",
+	["水织静久"] = {"Mizuori", "Shizuku"},
+}
+
+extension:addGeneral(General:new("key_shiki", {
+	sex = "female",
+	group = "shen",
+	groupInGuozhan = "key",
+	hp = 3,
+	maxHp = 5,
+	skills = {"shiki_omusubi"},
+	names = "神山|识",
+}))
+
+Fk:loadTranslationTable{
+	["key_shiki"] = "神山识",
+	["key_shiki_ab"] = "神山识",
+	["shiki_omusubi"] = "御结",
+	["shiki_omusubi_info"] = "每轮开始时，你可以减1点体力上限，然后将一名其他角色武将牌上的技能加入到你的武将牌上。",
+	["shiki_omusubi_append"] = '<span style="font-family: yuanli">来吧，羽依里。用你的手，让我变成那只真正的鬼吧！</span>',
+	["神山识"] = {"Kamiyama", "Shiki"},
+}
+
+extension:addGeneral(General:new("key_kamome", {
+	sex = "female",
+	group = "key",
+	hp = 3,
+	skills = {"kamome_yangfan", "kamome_huanmeng", "kamome_jieban"},
+	names = "久岛|鸥",
+}))
+
+Fk:loadTranslationTable{
+	["key_kamome"] = "久岛鸥",
+	["kamome_yangfan"] = "扬帆",
+	["kamome_yangfan_info"] = "锁定技，游戏开始时，你将一张【旅行箱】置入你的装备区。当你失去装备区内的一张牌后，你摸两张牌。",
+	["kamome_huanmeng"] = "幻梦",
+	["kamome_huanmeng_info"] = "准备阶段开始时，你可以观看牌堆顶的X+1张牌并可以按任意顺序置于牌堆顶或牌堆底。（X为你装备区内的牌数）",
+	["kamome_jieban"] = "结伴",
+	["kamome_jieban_info"] = "转换技。每回合限一次，当你受到或造成伤害后，阴：你可将两张牌交给一名其他角色，然后其交给你一张牌。阳：你可将一张牌交给一名其他角色，然后其交给你两张牌。",
+	["kamome_suitcase"] = "旅行箱",
+	["kamome_suitcase_info"] = "锁定技，你跳过你的判定阶段和弃牌阶段；当你即将翻面时，取消之。",
+	["久岛鸥"] = {"Kushima", "Kamome"},
+}
+
+extension:addGeneral(General:new("key_tenzen", {
+	sex = "male",
+	group = "key",
+	hp = 4,
+	skills = {"tenzen_fenghuan", "tenzen_retianquan"},
+	names = "加纳|天善",
+}))
+
+Fk:loadTranslationTable{
+	["key_tenzen"] = "加纳天善",
+	["tenzen_fenghuan"] = "封还",
+	["tenzen_fenghuan_info"] = "其他角色使用的【杀】或伤害性锦囊牌结算结束后，若你是此牌的唯一目标，则你可以弃置任意张点数之和大于等于此牌点数两倍的牌，然后视为对其使用一张名称相同的牌。",
+	["tenzen_retianquan"] = "天全",
+	["tenzen_retianquan_info"] = "每回合限一次。当你使用【杀】指定目标后，你可失去1点体力或弃置一张牌，然后亮出牌堆顶的三张牌（若你的体力值小于体力上限的50%，则改为展示五张牌）。这些牌中每有一张基本牌，响应此牌所需的【闪】的数量便+1。此牌结算结束后，若此牌造成过伤害，则你获得展示牌中的所有非基本牌。",
+	["加纳天善"] = {"Kano", "Tenzen"},
+}
+
+Fk:loadTranslationTable{
+	["key_summerpockets"] = "Summer Pockets",
+}
+
+return extension
