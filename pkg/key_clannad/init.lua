@@ -11,9 +11,9 @@ Fk:loadTranslationTable{
 	["yukine_wenzhou"] = "问咒",
 	["yukine_wenzhou_info"] = "一名角色的出牌阶段开始时，其可以交给你一张牌。若如此做，你选择一项：交给其一张牌，或令其从牌堆中获得一张与此牌类型相同的牌，且其于此阶段内使用与此牌牌名相同的牌时无法被响应。",
 }
-
+-- 性别问题存疑，不好实现
 -- 春原阳平&春原芽衣
-General:new(extension, "key_sunohara", "key", 3, 3, General.Double):addSkills{"sunohara_chengshuang", "sunohara_tiaoyin", "sunohara_jianren"}.hujia = 2
+General:new(extension, "key_sunohara", "key", 3, 3, General.Female):addSkills{"sunohara_chengshuang", "sunohara_tiaoyin", "sunohara_jianren"}.hujia = 2
 Fk:loadTranslationTable{
 	["key_sunohara"] = "春原阳平&春原芽衣",
 	["key_sunohara_ab"] = "阳平芽衣",
